@@ -12,7 +12,7 @@ tests, a CI pipeline, a Streamlit app, and Docker containerization.
 
 CI: [![CI](https://github.com/chKenza/Real-time-forecast-of-platform-waiting-time/actions/workflows/ci.yml/badge.svg)](https://github.com/chKenza/Real-time-forecast-of-platform-waiting-time/actions/workflows/ci.yml)
 
-Coverage: [![codecov](https://codecov.io/gh/chKenza/Real-time-forecast-of-platform-waiting-time/graph/badge.svg)](https://codecov.io/gh/chKenza/Real-time-forecast-of-platform-waiting-time)
+Coverage: [![codecov](https://codecov.io/github/chkenza/real-time-forecast-of-platform-waiting-time/graph/badge.svg)](https://app.codecov.io/github/chkenza/real-time-forecast-of-platform-waiting-time)
 
 
 ## Requirements
