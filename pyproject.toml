@@ -1,0 +1,31 @@
+[project]
+name = "sncf-waiting-time-forecast"
+version = "0.1.0"
+description = "Short-term platform waiting-time forecasting for Transilien SNCF Voyageurs"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas==3.0.5",
+    "numpy==2.5.3",
+    "scikit-learn==1.9.1",
+    "joblib==1.6.0",
+    "lightgbm==4.7.0",
+    "matplotlib==3.11.2",
+    "streamlit==1.64.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
