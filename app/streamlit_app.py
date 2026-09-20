@@ -3,11 +3,6 @@ Streamlit demo for the Transilien SNCF waiting-time forecasting model.
 
 Run locally with:
     streamlit run app/streamlit_app.py
-
-The trained pipeline is loaded from MODEL_PATH (env var, default
-models/lightgbm_production.joblib, falling back to models/lightgbm.joblib),
-and its reported validation metrics from the matching *.json metadata file
-written by src.train.
 """
 
 from __future__ import annotations
@@ -19,8 +14,6 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-# `streamlit run app/streamlit_app.py` only puts app/ on sys.path, not the
-# repo root, so src.* wouldn't otherwise be importable.
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from src.preprocessing import RAW_FEATURE_COLUMNS, TARGET_COLUMN, preprocess_features  # noqa: E402
@@ -133,7 +126,7 @@ across Île-de-France, and displays an estimated waiting time at each station. T
 project explores whether that estimate can be improved: given a train **k** at station
 **s** on day **d**, predict **p0q0**, the difference (in minutes) between the theoretical
 and the observed waiting time, for the train two stations *upstream* of where it
-currently is — i.e. a short-term forecast, not a description of what already happened.
+currently is, i.e. a short-term forecast, not a description of what already happened.
 
 Full challenge description and data:
 [ENS Data Challenge](https://challengedata.ens.fr/participants/challenges/166/).
