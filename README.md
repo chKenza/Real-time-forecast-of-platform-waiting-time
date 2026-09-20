@@ -8,7 +8,11 @@ displayed on the platform.
 
 We train and tune the following models: Liner Regression, Random Forest,
 Extra Trees, Histogram Gradient Boosting, LightGBM. We also include unit
-tests, a CI pipeline, a Streamlit app, and a Docker image.
+tests, a CI pipeline, a Streamlit app, and Docker containerization.
+
+CI: [![CI](https://github.com/chKenza/Real-time-forecast-of-platform-waiting-time/actions/workflows/ci.yml/badge.svg)](https://github.com/chKenza/Real-time-forecast-of-platform-waiting-time/actions/workflows/ci.yml)
+Coverage: [![codecov](https://codecov.io/gh/chKenza/Real-time-forecast-of-platform-waiting-time/graph/badge.svg)](https://codecov.io/gh/chKenza/Real-time-forecast-of-platform-waiting-time)
+
 
 ## Requirements
 
