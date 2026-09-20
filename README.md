@@ -102,7 +102,7 @@ Then open http://localhost:8501.
 
 The image is published on [Docker Hub](https://hub.docker.com/r/chkenza/sncf-waiting-time)
 with the trained model.
-You can get the working app without usloning the repository using:
+You can get the working app without cloning the repository using:
 
 ```bash
 docker pull chkenza/sncf-waiting-time
