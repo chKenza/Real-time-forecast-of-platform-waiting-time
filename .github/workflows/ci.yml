@@ -8,6 +8,8 @@ on:
 
 jobs:
   lint-and-test:
+    runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -25,7 +27,7 @@ jobs:
         run: flake8 src app tests
 
       - name: Check formatting with black
-        run: black .
+        run: black --check src app tests
 
       - name: Run tests
         run: pytest tests/ -v
