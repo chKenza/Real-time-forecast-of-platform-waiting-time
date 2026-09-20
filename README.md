@@ -14,6 +14,7 @@ CI: [![CI](https://github.com/chKenza/Real-time-forecast-of-platform-waiting-tim
 
 Coverage: [![codecov](https://codecov.io/github/chkenza/real-time-forecast-of-platform-waiting-time/graph/badge.svg)](https://app.codecov.io/github/chkenza/real-time-forecast-of-platform-waiting-time)
 
+
 ## Requirements
 
 ```bash
