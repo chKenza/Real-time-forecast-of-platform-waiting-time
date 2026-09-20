@@ -18,7 +18,7 @@ brew install libomp
 ## Getting the data
 
 `data/` is gitignored. Download `x_train`, `y_train`, `x_test`, `y_sample` from the
-[ENS Data Challenge #166](https://challengedata.ens.fr/participants/challenges/166/)
+[ENS Data Challenge](https://challengedata.ens.fr/participants/challenges/166/)
 and place them in `data/` under their original file names.
 
 ## Running the project
