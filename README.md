@@ -79,7 +79,10 @@ locally available labelled data with the tuned hyperparameters.
 ## Application
 
 A Streamlit app (`app/streamlit_app.py`) serves the trained model for single or
-batch predictions:
+batch predictions.
+
+### Run it from source
+You can run the Streamlit app using:
 
 ```bash
 streamlit run app/streamlit_app.py
@@ -90,6 +93,20 @@ or containerized:
 ```bash
 docker build -t sncf-waiting-time .
 docker run -p 8501:8501 sncf-waiting-time
+```
+
+Then open http://localhost:8501.
+
+
+### Run it from the pre-built Docker image
+
+The image is published on [Docker Hub](https://hub.docker.com/r/chkenza/sncf-waiting-time)
+with the trained model.
+You can get the working app without usloning the repository using:
+
+```bash
+docker pull chkenza/sncf-waiting-time
+docker run -p 8501:8501 chkenza/sncf-waiting-time
 ```
 
 Then open http://localhost:8501.
