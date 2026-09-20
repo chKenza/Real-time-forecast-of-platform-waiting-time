@@ -1,4 +1,4 @@
-"""Unit tests for `src.preprocessing`"""
+"""Unit tests for :mod:`src.preprocessing`"""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-"""Unit tests for `src.eda`"""
+"""Unit tests for :mod:`src.eda`"""
 
 from __future__ import annotations
 
